@@ -1,0 +1,68 @@
+{
+  "enabled": true,
+  "model_name": "Archive LightGBM (best rare attacks)",
+  "rare_support_threshold": 500,
+  "min_recall_ratio": 0.7,
+  "uncertainty_floor": 0.5,
+  "tuning_scope": "hard",
+  "fallback_to_next_rank": false,
+  "abstain_on_low_confidence_rare": true,
+  "abstain_label": "UNCERTAIN_RARE",
+  "rare_classes": [
+    "Backdoor_Malware",
+    "BrowserHijacking",
+    "CommandInjection",
+    "DictionaryBruteForce",
+    "Recon-PingSweep",
+    "SqlInjection",
+    "Uploading_Attack",
+    "XSS"
+  ],
+  "thresholds": {},
+  "metrics": {
+    "validation_baseline": {
+      "accuracy": 0.9483587553386211,
+      "macro_f1": 0.9209975551635097,
+      "weighted_f1": 0.9482324806587233,
+      "rare_mean_precision": 0.8141305151689049,
+      "rare_mean_recall": 0.7840006162014856,
+      "rare_support_total": 5921
+    },
+    "validation_thresholded": {
+      "accuracy": 0.9483587553386211,
+      "macro_f1": 0.9209975551635097,
+      "weighted_f1": 0.9482324806587233,
+      "rare_mean_precision": 0.8141305151689049,
+      "rare_mean_recall": 0.7840006162014856,
+      "rare_support_total": 5921
+    },
+    "official_test_baseline": {
+      "accuracy": 0.9931180752703613,
+      "macro_f1": 0.8170174849435071,
+      "weighted_f1": 0.9936278415618532,
+      "rare_mean_precision": 0.29922972929201086,
+      "rare_mean_recall": 0.6060150569119718,
+      "rare_support_total": 998
+    },
+    "official_test_thresholded": {
+      "accuracy": 0.9931180752703613,
+      "macro_f1": 0.8170174849435071,
+      "weighted_f1": 0.9936278415618532,
+      "rare_mean_precision": 0.29922972929201086,
+      "rare_mean_recall": 0.6060150569119718,
+      "rare_support_total": 998
+    },
+    "validation_changed_fraction": 0.0,
+    "official_test_changed_fraction": 0.0,
+    "validation_abstention": {
+      "abstain_rate": 0.0,
+      "abstain_on_rare_truth_rate": 0.0,
+      "abstain_on_nonrare_truth_rate": 0.0
+    },
+    "official_test_abstention": {
+      "abstain_rate": 0.0,
+      "abstain_on_rare_truth_rate": 0.0,
+      "abstain_on_nonrare_truth_rate": 0.0
+    }
+  }
+}
