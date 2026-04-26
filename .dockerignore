@@ -1,0 +1,19 @@
+.git
+.MLvenv
+__pycache__
+*.pyc
+.pytest_cache
+.lgbm_cache
+streamlit.err.log
+streamlit.out.log
+
+# Exclude large training datasets from the Docker image.
+# The image keeps source code, dashboard, reports, demo data, and deployed models.
+data/archive (2)/
+data/raw/
+data/interim/
+data/processed/
+data/samples/
+
+# Exclude very large experimental model not used by the app.
+models/best_random_forest.joblib

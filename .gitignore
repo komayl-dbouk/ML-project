@@ -1,0 +1,37 @@
+# Virtual environment
+.venv/
+.MLvenv/
+
+# Python cache
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Data files (optional depending on size)
+data/archive (2)/
+data/raw/
+data/interim/
+data/processed/
+data/samples/
+
+# Models
+models/best_random_forest.joblib
+
+# Runtime/cache/log files
+.lgbm_cache/
+streamlit.err.log
+streamlit.out.log
+*.log
+
+# Docker exports
+*.tar
+*.tar.gz
+
+# OS / editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
